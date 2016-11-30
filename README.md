@@ -1,5 +1,8 @@
-# BalmJS [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> A flexible Front-End workflow
+# BalmJS light
+> A flexible Front-End workflow for HTML,CSS,JS
+
+## [Docs](https://github.com/balmjs/balm/tree/light)
+> please read me first
 
 ## Demo
 
@@ -26,19 +29,19 @@ project
 └── ...
 ```
 
-## [Installation & Setup](https://github.com/balmjs/balm/blob/master/docs/installation.md)
+## [Installation & Setup](https://github.com/balmjs/balm/blob/light/docs/installation.md)
 
 ```sh
 npm install --save-dev gulp balm
 ```
 
-## [Configuration](https://github.com/balmjs/balm/blob/master/docs/configuration.md)
+## [Configuration](https://github.com/balmjs/balm/blob/light/docs/configuration.md)
 
 File: `gulpfile.js`
 
 ```js
 // 1. import balm
-var balm = require('balm');
+var balm = require('balm-light');
 
 // 2. config balm
 balm.config = {
@@ -49,8 +52,8 @@ balm.config = {
 balm.go();
 ```
 
-- [example](https://github.com/balmjs/balm/blob/master/docs/_gulpfile.js)
-- [template](https://github.com/balmjs/balm/blob/master/docs/_index.html)
+- [example](https://github.com/balmjs/balm/blob/light/docs/_gulpfile.js)
+- [template](https://github.com/balmjs/balm/blob/light/docs/_index.html)
 
 ## Usage
 
@@ -62,21 +65,11 @@ $ gulp
 $ gulp --production
 ```
 
-## [Common Issues](https://github.com/balmjs/balm/blob/master/docs/issues.md)
+## [Common Issues](https://github.com/balmjs/balm/blob/light/docs/issues.md)
 
 ## License
 
 MIT © [Elf-mousE](http://elf-mouse.me/)
-
-
-[npm-image]: https://badge.fury.io/js/balm.svg
-[npm-url]: https://npmjs.org/package/balm
-[travis-image]: https://travis-ci.org/balmjs/balm.svg?branch=master
-[travis-url]: https://travis-ci.org/balmjs/balm
-[daviddm-image]: https://david-dm.org/balmjs/balm.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/balmjs/balm
-[coveralls-image]: https://coveralls.io/repos/balmjs/balm/badge.svg
-[coveralls-url]: https://coveralls.io/r/balmjs/balm
 
 
 > __thx [node](https://nodejs.org/) & [gulp](http://gulpjs.com/) & [webpack](http://webpack.github.io/)__

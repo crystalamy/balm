@@ -1,7 +1,6 @@
 ## Custom Task
 
 - stylesheets
-    - css
     - less
     - sass
     - cssmin
@@ -10,9 +9,6 @@
     - jsmin
 - others
     - copy
-    - remove
-    - zip
-    - ftp
 
 __File: gulpfile.js__
 
@@ -31,17 +27,13 @@ balm.go(function(mix) {
     mix.jsmin('dist/js/**/*.js', 'dist/js');
 
     mix.copy('/path/to/dist/**/*', '/path/to/project');
-    mix.zip('dist/**/*', '.'); // default output: ./archive.zip
-    mix.ftp('archive.zip');
 
-    mix.remove(['/path/to/project/public/css', '/path/to/project/public/js']);
     mix.publish(); // publish assets to `config.assets.root/config.assets.publicPath`
     mix.publish('index.html', '/path/to/project/views', {
       suffix: '.blade',
       extname: '.php'
     });
   } else {
-    mix.css('src/css/main.css', 'dist/css');
     mix.less('src/less/main.less', 'dist/css');
     mix.sass('src/sass/main.scss', 'dist/css');
 

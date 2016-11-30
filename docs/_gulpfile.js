@@ -27,10 +27,6 @@ balm.config = {
     },
     vendors: ['common']
   }
-  // , sprites: {
-  //   image: ['img-icon'], // iconPath = app/images/img-icon
-  //   svg: ['svg-icon']    //  svgPath = app/images/svg-icon
-  // },
   // cache: true,
   // assets: {
   //   root: '/path/to/your_project',

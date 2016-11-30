@@ -3,7 +3,7 @@
 File: `gulpfile.js`
 
 ```js
-var balm = require('balm');
+var balm = require('balm-light');
 
 balm.config = {
   // your project config
@@ -67,21 +67,7 @@ balm.go();
         - [scripts.HMR](#scriptshmr)
         - [scripts.sourceMap](#scriptssourcemap)
         - [scripts.eslint](#scriptseslint)
-7. [__CSS Sprites__](#sprite)
-    - [sprites.basePath](#spritesbasepath)
-    - [sprites.padding](#spritespadding)
-    - [sprites.image](#spritesimage)
-    - [sprites.mode](#spritesmode)
-    - [sprites.svg](#spritessvg)
-8. __Publish__
-    - Zip
-        - [zip](#zip)
-    - FTP
-        - [ftp.host](#ftphost)
-        - [ftp.port](#ftpport)
-        - [ftp.user](#ftpuser)
-        - [ftp.pass](#ftppass)
-        - [ftp.remotePath](#ftpremotepath)
+7. __Publish__
     - Cache
         - [cache](#cache)
     - Assets
@@ -89,7 +75,7 @@ balm.go();
         - [assets.root](#assetsroot)
         - [assets.publicPath](#assetspublicpath)
         - [assets.subDir](#assetssubdir)
-9. [__Custom Task__](custom-task.md)
+8. [__Custom Task__](custom-task.md)
 
 ---
 
@@ -481,95 +467,7 @@ The pluggable linting utility for JavaScript and JSX
 
 > Default: `false`
 
-## Sprite
-
-```js
-sprites: {
-  image: [], // e.g. ['img-icon-folder', 'img-button-folder']
-  svg: [] // e.g. ['svg-logo-folder']
-},
-...
-```
-
-### `sprites.basePath`
-
-Path to use in CSS referring to image location
-
-> Default: `'../'`
-
-### `sprites.padding`
-
-Amount of pixels to include between images or svgs
-
-> Default: `0`
-
-### `sprites.image`
-
-Image folder name
-
-> Default: `[]`
-
-### `sprites.mode`
-
-Output modes: `css`, `view`, `defs`, `symbol`, `stack`
-
-> Default: `'css'`
-
-### `sprites.svg`
-
-SVG folder name
-
-> Default: `[]`
-
 ## Publish
-
-__Zip__
-
-```js
-zip: 'archive.zip'
-...
-```
-
-### `zip`
-
-Zip filename
-
-> Default: `'archive.zip'`
-
-__Ftp__
-
-```js
-ftp: {
-  host: undefined,
-  port: 22,
-  user: 'anonymous',
-  pass: null,
-  remotePath: '/'
-},
-...
-```
-
-### `ftp.host`
-
-Required
-
-> Default: `undefined`
-
-### `ftp.port`
-
-> Default: `22`
-
-### `ftp.user`
-
-> Default: `'anonymous'`
-
-### `ftp.pass`
-
-> Default: `null`
-
-### `ftp.remotePath`
-
-> Default: `'/'`
 
 __Cache__
 
