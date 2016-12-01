@@ -44,10 +44,6 @@ const balmConfig = {
     vender: true,
     eslint: true
   },
-  sprites: {
-    image: ['img-icon'],
-    svg: ['svg-icon']
-  },
   cache: true,
   assets: {
     root: testConfig.assets,

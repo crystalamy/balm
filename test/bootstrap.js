@@ -9,7 +9,6 @@ before(function() {
   // test build
   balm.go(function(mix) {
     // test compiling
-    mix.css('app/styles/main.css', '.tmp/styles/css');
     mix.sass('app/styles/main.sass', '.tmp/styles/sass');
     mix.sass('app/styles/main.scss', '.tmp/styles/scss');
     mix.less('app/styles/main.less', '.tmp/styles/less');
@@ -23,10 +22,7 @@ before(function() {
       suffix: '.blade',
       extname: '.php'
     });
-    // // test zip
-    mix.remove(balm.config.workspace + '/archive.zip');
-    mix.zip();
-    // // test publish
+    // test publish
     mix.publish();
     mix.publish('index.html', 'public/web', {
       basename: 'home',
@@ -36,8 +32,4 @@ before(function() {
   });
 
   balm.go(); // wrong
-
-  balm.go('unkonwn'); // wrong
-
-  balm.go('default'); // right
 });

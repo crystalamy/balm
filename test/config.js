@@ -1,5 +1,4 @@
 import assert from 'assert';
-
 import balm from '../lib/main';
 import balmConfig from './balm.config';
 
